@@ -1,0 +1,85 @@
+/* Contenedor principal */
+.document-crud-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  padding-top: 100px;
+}
+
+/* Estilos para el formulario */
+.document-form {
+  margin-bottom: 30px;
+}
+
+.document-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.document-form input, .document-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.document-form button {
+  background-color: #0da6a6;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.document-form button:hover {
+  background-color: #0b7f7f;
+}
+
+/* Estilos para la lista de documentos */
+.document-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.document-list th, .document-list td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.document-list th {
+  background-color: #0da6a6;
+  color: white;
+}
+
+.document-list button {
+  background-color: #0da6a6;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.document-list button:hover {
+  background-color: #0b7f7f;
+}
+
+/* Historial de versiones */
+.version-history {
+  margin-top: 30px;
+}
+
+.version-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.version-history li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,98 @@
+/* Estilo base de la sidebar */
+/* src/Styles/dashboard.css */
+
+/* Layout para el admin (sidebar y contenido principal) */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  
+}
+
+/* Sidebar Styles */
+.sidebar {
+
+  padding-top: 100px;
+  width: 80px;
+  background-color: #34495e;
+  transition: width 0.3s ease;
+  color: white;
+  height: 100vh;
+  
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px; /* Ajuste si tienes un header */
+}
+
+.sidebar-menu li {
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.sidebar-menu a{
+  text-decoration: none; 
+  color: white;
+}
+
+
+.sidebar-menu li:hover {
+  background-color: #16a085;
+}
+
+.sidebar-menu li svg {
+  font-size: 1.5rem;
+}
+
+.sidebar-menu span {
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.open .sidebar-menu span {
+  opacity: 1;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+  margin-left: 80px;
+  padding: 20px;
+  width: calc(100% - 80px);
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.open + .main-content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 60px;
+ 
+}
+
+.submenu li {
+  padding: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submenu li:hover {
+  color: #0da6a6;
+}

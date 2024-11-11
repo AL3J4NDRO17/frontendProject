@@ -1,0 +1,33 @@
+/* src/styles/splashScreen.css */
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* Color de fondo */
+    z-index: 9999; /* Asegura que esté en la capa superior */
+    font-family: Arial, sans-serif;
+}
+
+.splash-logo h1 {
+    font-size: 4rem; /* Tamaño del ícono o letra inicial */
+    margin: 0;
+    color: #0073e6; /* Color de tu preferencia */
+    animation: pulse 1s infinite; /* Añade un efecto */
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.splash-screen p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555555;
+}

@@ -1,0 +1,58 @@
+/* Estilos del contenedor principal */
+.verify-email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Imagen del sobre */
+.verify-email-image {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Título del mensaje */
+.verify-email-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Mensaje de estado */
+.verify-email-message {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 500px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Botón de reenviar correo */
+.resend-email-button {
+    background-color: #20B2AA;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.resend-email-button:hover {
+    background-color: #1a938c;
+}
+
+.resend-email-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

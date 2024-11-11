@@ -1,0 +1,174 @@
+/* Variables - asegúrate de que coincidan con tu tema */
+:root {
+    --primary-blue: #5FA5B2;
+    --text-gray: #666666;
+    --bg-cream: #FCFBF8;
+  }
+  
+  /* Estilos de la sección About */
+  .about-section {
+    background-color: var(--bg-cream);
+    padding: 4rem 0;
+    overflow: hidden;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .about-tagline {
+    color: var(--text-gray);
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .about-title {
+    color: var(--primary-blue);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-experience {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .about-experience-text {
+    color: var(--text-gray);
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .about-text-content {
+    padding-right: 2rem;
+  }
+  
+  .about-subtitle {
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-description {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-features {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  
+  .about-features li {
+    color: var(--text-gray);
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    line-height: 1.5;
+  }
+  
+  .about-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+  }
+  
+  .about-image {
+    position: relative;
+    height: 100%;
+  }
+  
+  .about-doctor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .about-content {
+      gap: 2rem;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-text-content {
+      padding-right: 0;
+    }
+  
+    .about-image {
+      margin-top: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .about-title {
+      font-size: 1.75rem;
+    }
+  
+    .about-subtitle {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-header,
+  .about-experience,
+  .about-text-content,
+  .about-image {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .about-text-content { animation-delay: 0.2s; }
+  .about-image { animation-delay: 0.4s; }

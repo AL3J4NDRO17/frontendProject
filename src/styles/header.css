@@ -1,0 +1,327 @@
+/* Header.css */
+/* src/styles/header.css */
+.menu-placeholder {
+  width: 150px;      /* Ajusta el ancho según el tamaño de tu menú */
+  height: 40px;      /* Ajusta el alto según el tamaño de tu menú */
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  opacity: 0.3;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Animación para el "efecto esqueleto" */
+@keyframes pulse {
+  0% {
+      opacity: 0.3;
+  }
+  50% {
+      opacity: 0.6;
+  }
+  100% {
+      opacity: 0.3;
+  }
+}
+
+/* Estilos generales del header */
+.site-header {
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.loading-header {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+.top-bar {
+  background-color: #666;
+  color: white;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-header {
+  background-color: white;
+  padding: 15px 0;
+}
+
+.logo {
+  flex: 1; /* Asegura que el logo se mantenga en el extremo izquierdo */
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+.main-nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.registration-number {
+  margin: 0;
+}
+
+.contact-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.whatsapp-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  color: white;
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: white;
+  padding: 15px 0;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+/* Botones de autenticación (Iniciar Sesión y Registro) */
+.auth-buttons a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+/* Estilo para el botón de "Iniciar Sesión" */
+.auth-buttons a.btn-login {
+  background-color: #00b2a9;
+  /* Color turquesa */
+}
+
+.auth-buttons a.btn-login:hover {
+  background-color: #008f88;
+  /* Turquesa más oscuro al hacer hover */
+}
+
+/* Estilo para el botón de "Registrarse" */
+.auth-buttons a.btn-register {
+  background-color: #c2185b;
+  /* Rosa oscuro */
+}
+
+.auth-buttons a.btn-register:hover {
+  background-color: #a7154d;
+  /* Rosa más oscuro al hacer hover */
+}
+
+/* Adaptación de los botones de auth según el tamaño de pantalla */
+.auth-buttons.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .auth-buttons.desktop {
+    display: none;
+    /* Oculta los botones de escritorio en móvil */
+  }
+
+  .auth-buttons.mobile {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+/* Menú de navegación principal */
+.mobile-menu-toggle {
+  display: none;
+
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+
+  z-index: 100;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.main-nav {
+  flex-grow: 1;
+ 
+  transition: right 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00b2a9;
+  /* Cambia a color turquesa en hover */
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+/* Menú desplegable con animación */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.has-dropdown.active .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  padding: 8px 20px;
+  display: block;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Botón de búsqueda */
+.search-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .main-nav {
+    display: none;
+    /* Ocultar en móvil */
+  }
+
+  .main-nav.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    
+    height: 100vh;
+    background: white;
+    padding: 80px 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 90;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding-left: 20px;
+    display: none;
+  }
+
+  .has-dropdown.active .dropdown-menu {
+    display: block;
+  }
+}

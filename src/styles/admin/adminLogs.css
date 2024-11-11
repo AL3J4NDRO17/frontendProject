@@ -1,0 +1,152 @@
+/* Contenedor general del panel de administración */
+.admin-panel-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+  }
+  
+  .admin-panel-container h1 {
+    font-size: 2rem;
+    color: #1f8fa7;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Botón general del panel */
+  .admin-panel-button {
+    background-color: #1f8fa7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-panel-button:hover {
+    background-color: #156f7f;
+  }
+  
+  /* Estilos para la tabla */
+  .admin-log-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-log-table th,
+  .admin-log-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-log-table th {
+    background-color: #1f8fa7;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .admin-log-table td {
+    color: #333;
+  }
+  
+  .admin-log-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Botones en la tabla */
+  .admin-log-action-button {
+    background-color: #2e86c1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .admin-log-action-button:hover {
+    background-color: #2874a6;
+  }
+  
+  .admin-log-delete-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .admin-log-delete-button:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Modal */
+  .admin-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .admin-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  /* Lista de historial */
+  .admin-log-history-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-log-history-list li {
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para los estados de logs */
+  .log-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .log-status.success {
+    background-color: #28a745; /* Verde para eventos exitosos */
+  }
+  
+  .log-status.failure {
+    background-color: #dc3545; /* Rojo para errores */
+  }
+  
+  .log-status.warning {
+    background-color: #f0ad4e; /* Amarillo para advertencias */
+  }
+  

@@ -1,0 +1,72 @@
+/* adminFront.css */
+
+/* Contenedor principal */
+.admin-container {
+    padding: 20px; /* Espaciado interno del contenedor */
+  }
+  
+  /* Estilo para el formulario */
+  form {
+    margin-bottom: 20px; /* Espacio inferior del formulario */
+  }
+  
+  /* Estilo para los inputs y selects */
+  input[type="text"],
+  input[type="file"],
+  select {
+    width: 100%; /* Ancho completo */
+    padding: 12px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-bottom: 15px; /* Espaciado inferior */
+    box-shadow: none; /* Sin sombra */
+  }
+  
+  /* Estilo para el label "Valor" */
+  label {
+    display: block; /* Hace que el label ocupe todo el ancho */
+    margin-bottom: 5px; /* Espacio debajo del label */
+  }
+  
+  /* Estilo para el botón */
+  .button {
+    width: auto; /* Ancho automático */
+    background-color: #0da6a6; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo y lados) */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 4px; /* Bordes redondeados */
+    font-weight: 600; /* Peso de fuente */
+    transition: background-color 0.3s ease; /* Efecto al pasar el mouse */
+  }
+  
+  .button:hover {
+    background-color: #0b7f7f; /* Color al pasar el mouse */
+  }
+  
+  /* Estilo para la tabla */
+  .collection-table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Espacio superior para la tabla */
+  }
+  
+  .collection-table th,
+  .collection-table td {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+  
+  
+  .logo-preview {
+    width: auto; /* Ancho automático */
+    height: 50px; /* Altura fija */
+    margin-right: 15px; /* Espacio a la derecha */
+    margin-left: 15px; /* Espacio a la izquierda */
+     /* Para que el logotipo ocupe todo el ancho disponible */
+    object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+  }

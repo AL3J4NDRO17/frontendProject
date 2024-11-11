@@ -1,0 +1,36 @@
+/* Contenedor principal */
+.account-verified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9fafa;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Imagen de éxito */
+.account-verified-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Título */
+.account-verified-title {
+    font-size: 2rem;
+    color: #4caf50; /* Verde para éxito */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Mensaje */
+.account-verified-message {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
